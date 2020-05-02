@@ -1,0 +1,28 @@
+#BlueJ class context
+comment0.target=tttGUISettingsAI
+comment1.params=
+comment1.target=tttGUISettingsAI()
+comment1.text=\ \n\ Class\ constructor\ \n
+comment2.params=e
+comment2.target=void\ actionPerformed(java.awt.event.ActionEvent)
+comment3.params=e
+comment3.target=void\ actionPerformed(java.awt.event.ActionEvent)
+comment4.params=e
+comment4.target=void\ actionPerformed(java.awt.event.ActionEvent)
+comment4.text=\ \n\ Override\ actionPerformed()\n\ \=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\n\ Assigns\ all\ methods\ and\ events\ that\ must\ be\ completed\ \n\ upon\ clicking\ a\ button\ on\ the\ playing\ grid.\n\ \n\ @param\tActionEvent\te\n\ @return\tvoid\n
+comment5.params=
+comment5.target=boolean\ determineWinner()
+comment5.text=\ \n\ determineWinner()\n\ \=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\n\ Determine\ if\ there\ is\ a\ winner,\ and\ who\ that\ player\ is\n\ \n\ @param\tActionEvent\te\n\ @return\tboolean\t\ttrue\ if\ there\ has\ been\ a\ winner\ or\ a\ tie\n\ \t\t\t\t\t\tfalse\ otherwise\n
+comment6.params=
+comment6.target=void\ initButtons()
+comment6.text=\ \n\ initButtons()\n\ \=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\n\ Assigns\ all\ methods\ and\ events\ that\ must\ be\ completed\ \n\ upon\ clicking\ a\ button\ on\ the\ playing\ grid.\n\ \n\ @param\tActionEvent\te\n\ @return\tvoid\n
+comment7.params=
+comment7.target=void\ resetButtons()
+comment7.text=\ \n\ resetButtons()\n\ \=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\n\ Reset\ all\ buttons\ to\ default\ state\ by\:\n\ \t\t-\ setting\ the\ text\ to\ empty\n\ \t\t-\ enabling\ clicking\n\ \t\t-\ defaulting\ the\ scoreboard\ to\ be\ X's\ turn\n\ \n\ @param\tnone\n\ @return\tvoid\n
+comment8.params=
+comment8.target=void\ disableAllButtons()
+comment8.text=\ \n\ disableAllButtons()\n\ \=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\n\ Disable\ all\ buttons\ on\ the\ 3x3\ game\ grid\n\ Used\ when\ game\ has\ been\ won\n\ \n\ @param\tnone\n\ @return\tvoid\n
+comment9.params=x\ y
+comment9.target=void\ showAIMove(int,\ int)
+comment9.text=\ \n\ showAIMove()\n\ \=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\n\ Disable\ all\ buttons\ on\ the\ 3x3\ game\ grid\n\ Used\ when\ game\ has\ been\ won\n\ \n\ @param\tint\t\tx\n\ \t\t\tint\t\ty\n\ @return\tvoid\n
+numComments=10

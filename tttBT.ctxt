@@ -1,0 +1,48 @@
+#BlueJ class context
+comment0.target=tttBT
+comment1.params=
+comment1.target=tttBT()
+comment1.text=\ \n\ Class\ constructor\ \n
+comment10.params=top
+comment10.target=void\ printDiv(boolean)
+comment10.text=\ \n\ printDiv()\n\ \=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\n\ Prints\ the\ divider\ between\ segments\ of\ the\ board\n\ If\ it's\ the\ top\ row,\ print\ the\ labels\ for\ easy\ reference\n\ Not\ used\ for\ actual\ GUI\ game,\ but\ useful\ in\ debugging\ gameplay\n\ \n\ @param\tint\t\ttrue\ if\ printing\ the\ very\ first\ line\ of\ the\ board\n\ \t\t\t\t\tfalse\ otherwise\n\ @return\tvoid\n
+comment11.params=
+comment11.target=void\ printSpacer()
+comment11.text=\ \n\ printSpacer()\n\ \=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\n\ Prints\ the\ spaces\ on\ empty\ lines\ of\ the\ board\n\ Not\ used\ for\ actual\ GUI\ game,\ but\ useful\ for\ debugging\ gameplay\n\ \n\ @param\tnone\n\ @return\tvoid\n
+comment12.params=rowNum
+comment12.target=void\ printRow(int)
+comment12.text=\ \n\ printRow()\n\ \=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\n\ Prints\ the\ actual\ pieces\ currently\ on\ the\ board\n\ Not\ used\ for\ actual\ GUI\ game,\ but\ useful\ for\ debugging\ gameplay\n\ \n\ @param\tint\t\trow\ number\n\ @return\tvoid\n
+comment13.params=piece
+comment13.target=java.lang.String\ getPieceName(int)
+comment13.text=\ \n\ getPieceName()\n\ \=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\n\ Maps\ the\ constants\ of\ each\ piece\ to\ a\ character\n\ \n\ @param\tint\t\tpiece\n\ @return\tString\tthe\ character\ representation\ of\ a\ piece\n
+comment14.params=
+comment14.target=void\ printWinner()
+comment14.text=\ \n\ printWinner()\n\ \=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\n\ Prints\ the\ winner\ in\ proper\ formatting\ in\ an\ alert\ window\n\ \n\ @param\tnone\n\ @return\tvoid\n
+comment15.params=
+comment15.target=boolean\ hasEmpty()
+comment15.text=\ \n\ hasEmpty()\n\ \=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\n\ Determines\ whether\ or\ not\ there\ are\ any\ possible\ moves\ left\n\ Used\ in\ combination\ with\ hasWinner()\ to\ determine\ if\ gameplay\ should\ continue\n\ \n\ @param\tnone\n\ @return\tboolean\ttrue\ if\ board\ has\ at\ least\ one\ empty\ cell\n\ \t\t\t\t\tfalse\ otherwise\n
+comment2.params=
+comment2.target=int[][]\ initBoard()
+comment2.text=\ \n\ initBoard()\n\ \=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\n\ Initializes\ a\ 3x3\ playing\ grid,\ represented\ by\n\ a\ 2d\ int\ array,\ to\ be\ empty\ \n\ \n\ @param\tnone\n\ @return\tint\ [][]\tboard\n
+comment3.params=r\ c\ move
+comment3.target=boolean\ makeMove(int,\ int,\ int)
+comment3.text=\ \n\ makeMove()\n\ \=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\n\ Determines\ if\ a\ given\ move\ is\ valid\ and,\ if\ so,\ plays\ that\ move\n\ \n\ @param\tint\t\tr\n\ @param\tint\t\tc\n\ @param\tint\t\tmove\n\ @return\tboolean\ttrue\ if\ the\ move\ was\ made\n\ \t\t\t\t\tfalse\ otherwise\n
+comment4.params=row\ col
+comment4.target=boolean\ validMove(int,\ int)
+comment4.text=\ \n\ validMove()\n\ \=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\n\ Determines\ whether\ or\ not\ a\ move\ is\ valid.\n\ Not\ used\ for\ actual\ GUI\ game,\ but\ useful\ for\ debugging\ game\ play\ via\ console\n\ \n\ @param\tint\t\trow\n\ @param\tint\t\tcol\n\ @return\tboolean\ttrue\ if\ the\ cell\ [x][y]\ is\ inbounds\ and\ empty\n\ \t\t\t\t\tfalse\ otherwise\n
+comment5.params=r\ c
+comment5.target=void\ undoMove(int,\ int)
+comment5.text=\ \n\ undoMove()\n\ \=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\n\ Undoes\ the\ most\ recent\ move,\ in\ order\ to\ step\ back\ into\ the\ backtracking\n\ \n\ @param\tint\t\trow\n\ @param\tint\t\tcol\n\ @return\tvoid\n
+comment6.params=
+comment6.target=int\ getNumMoves()
+comment6.text=\ \n\ getNumMoves()\n\ \=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\n\ Returns\ how\ many\ moves\ completed\ in\ the\ game\ thus\ far\n\ (also\ known\ as\ the\ number\ of\ pieces\ on\ the\ board)\n\ \n\ @param\tnone\n\ @return\tint\t\tnumMoves\n
+comment7.params=cp
+comment7.target=spot\ getCompMove(int)
+comment7.text=\ \n\ getCompMove()\n\ \=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\nDetermines\ if\ chosen\ cell\ [x][y]\ is\ a\ valid\ move\ (ie\:\ both\ inbounds\ and\ empty)\n\ \n\ @param\tint\t\tcp\t\tthe\ computer's\ play\n\ @return\tspot\tan\ object\ containing\ the\ [x][y]\ coordinates\ of\ the\ cell\n
+comment8.params=
+comment8.target=int\ winner()
+comment8.text=\ \n\ winner()\n\ \=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\n\ Determines\ who\ has\ won\ the\ game\ at\ this\ point\ in\ time\n\ \n\ @param\tnone\n\ @return\tint\t\tthe\ constant\ representing\ the\ current\ winner\ (XAI,\ OAI,\ or\ EMPTYAI)\n
+comment9.params=
+comment9.target=void\ printBoard()
+comment9.text=\ \n\ printBoard()\n\ \=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\n\ Prints\ the\ gameboard\ in\ proper\ formatting\n\ Not\ used\ for\ actual\ GUI\ game,\ but\ useful\ in\ debugging\ gameplay\n\ \n\ @param\tnone\n\ @return\tvoid\n
+numComments=16

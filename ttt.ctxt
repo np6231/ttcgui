@@ -1,0 +1,42 @@
+#BlueJ class context
+comment0.target=ttt
+comment1.params=
+comment1.target=ttt()
+comment1.text=\ \n\ Class\ constructor\ \n
+comment10.params=top
+comment10.target=void\ printDiv(boolean)
+comment10.text=\ \n\ printDiv()\n\ \=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\n\ Prints\ the\ divider\ between\ segments\ of\ the\ board\n\ If\ it's\ the\ top\ row,\ print\ the\ labels\ for\ easy\ reference\n\ Not\ used\ for\ actual\ GUI\ game,\ but\ useful\ in\ debugging\ gameplay\n\ \n\ @param\tint\t\ttrue\ if\ printing\ the\ very\ first\ line\ of\ the\ board\n\ \t\t\t\t\tfalse\ otherwise\n\ @return\tvoid\n
+comment11.params=
+comment11.target=void\ printSpacer()
+comment11.text=\ \n\ printSpacer()\n\ \=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\n\ Prints\ the\ spaces\ on\ empty\ lines\ of\ the\ board\n\ Not\ used\ for\ actual\ GUI\ game,\ but\ useful\ for\ debugging\ gameplay\n\ \n\ @param\tnone\n\ @return\tvoid\n
+comment12.params=rowNum
+comment12.target=void\ printRow(int)
+comment12.text=\ \n\ printRow()\n\ \=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\n\ Prints\ the\ actual\ pieces\ currently\ on\ the\ board\n\ Not\ used\ for\ actual\ GUI\ game,\ but\ useful\ for\ debugging\ gameplay\n\ \n\ @param\tint\t\trow\ number\n\ @return\tvoid\n
+comment13.params=row\ col
+comment13.target=boolean\ validMove(int,\ int)
+comment13.text=\ \n\ validMove()\n\ \=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\n\ Determines\ whether\ or\ not\ a\ move\ is\ valid.\n\ Not\ used\ for\ actual\ GUI\ game,\ but\ useful\ for\ debugging\ game\ play\ via\ console\n\ \n\ @param\tint\t\trow\n\ @param\tint\t\tcol\n\ @return\tboolean\ttrue\ if\ the\ cell\ [x][y]\ is\ inbounds\ and\ empty\n\ \t\t\t\t\tfalse\ otherwise\n
+comment2.params=
+comment2.target=int[][]\ initBoard()
+comment2.text=\ \n\ initBoard()\n\ \=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\n\ Initializes\ a\ 3x3\ playing\ grid,\ represented\ by\n\ a\ 2d\ int\ array,\ to\ be\ empty\ \n\ \n\ @param\tnone\n\ @return\tint\ [][]\tboard\n
+comment3.params=
+comment3.target=boolean\ hasEmpty()
+comment3.text=\ \n\ hasEmpty()\n\ \=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\n\ Determines\ whether\ or\ not\ there\ are\ any\ possible\ moves\ left\n\ Used\ in\ combination\ with\ hasWinner()\ to\ determine\ if\ gameplay\ should\ continue\n\ \n\ @param\tnone\n\ @return\tboolean\ttrue\ if\ board\ has\ at\ least\ one\ empty\ cell\n\ \t\t\t\t\tfalse\ otherwise\n
+comment4.params=
+comment4.target=void\ printWinner()
+comment4.text=\ \n\ printWinner()\n\ \=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\n\ Prints\ the\ winner\ in\ proper\ formatting\ in\ an\ alert\ window\n\ \n\ @param\tnone\n\ @return\tvoid\n
+comment5.params=
+comment5.target=int\ hasWinner()
+comment5.text=\ \n\ hasWinner()\n\ \=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\n\ Determines\ who\ has\ won\ the\ game\ at\ this\ point\ in\ time\n\ \n\ @param\tnone\n\ @return\tint\t\tthe\ constant\ representing\ the\ current\ winner\ \n\ \t\t\t\t\t(X,\ O,\ or\ EMPTY)\n
+comment6.params=
+comment6.target=void\ swapPlayer()
+comment6.text=\ \n\ swapPlayer()\n\ \=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\n\ Swaps\ between\ players\ X\ and\ O\n\ \n\ @param\tnone\n\ @return\tvoid\n
+comment7.params=
+comment7.target=char\ getCurPlayer()
+comment7.text=\ \n\ getCurPlayer()\n\ \=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\n\ Returns\ the\ value\ of\ the\ current\ player\ in\ the\ game\n\ \n\ @param\tnone\n\ @return\tchar\tCURPLAYER\n
+comment8.params=row\ col
+comment8.target=void\ playMove(int,\ int)
+comment8.text=\ \n\ playMove()\n\ \=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\n\ Actually\ stores\ the\ chosen\ play\ in\ the\ board\n\ \n\ @param\tint\t\trow\n\ @param\tint\t\tcol\n\ @return\tvoid\n\ \n\ @pre\t\trow\ and\ col\ represents\ a\ valid\ cell,\ as\ determined\ by\ validMove()\n
+comment9.params=
+comment9.target=void\ printBoard()
+comment9.text=\ \n\ printBoard()\n\ \=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\n\ Prints\ the\ gameboard\ in\ proper\ formatting\n\ Not\ used\ for\ actual\ GUI\ game,\ but\ useful\ in\ debugging\ gameplay\n\ \n\ @param\tnone\n\ @return\tvoid\n
+numComments=14
